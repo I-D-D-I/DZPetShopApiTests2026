@@ -114,8 +114,8 @@ class TestPet:
     @pytest.mark.parametrize(
         "status, expected_status_code",
         [
-            # ("available", 200),
-            # ("pending", 200),
+            ("available", 200),
+            ("pending", 200),
             ("sold", 200),
             ("asd", 400),
             ("", 400)
